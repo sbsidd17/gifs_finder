@@ -38,13 +38,13 @@ function App() {
         onSubmit={submitHandler}
         className="flex flex-col gap-5 md:w-[60%]  mx-auto"
       >
-        <h1 className="text-center text-white text-xl">Gifs Finder</h1>
+        <h1 className="text-center text-white text-xl mt-4">Gifs Finder</h1>
         <input
           className="rounded-lg p-3"
           onChange={changeHandler}
           placeholder="Search Gifs"
         />
-        <div className="flex flex-wrap w-full md:h-[300px] h-[600px] justify-center gap-2 border border-white overflow-y-auto">
+        <div className="flex flex-wrap w-full md:h-[300px] h-[70vh] justify-center gap-2 border border-white overflow-y-auto">
           {gifUrl.map((item, index) => {
             return loading === true ? (
               <Loading key={index} />
