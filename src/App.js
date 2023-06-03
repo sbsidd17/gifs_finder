@@ -36,7 +36,7 @@ function App() {
     <div className="w-[100vw] h-[100vh] flex justify-center items-center">
       <form
         onSubmit={submitHandler}
-        className="flex flex-col gap-5 w-[60%]  mx-auto"
+        className="flex flex-col gap-5 md:w-[60%]  mx-auto"
       >
         <h1 className="text-center text-white text-xl">Gifs Finder</h1>
         <input
