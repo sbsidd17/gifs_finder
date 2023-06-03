@@ -1,12 +1,12 @@
 import React from 'react';
 import {FaShareSquare} from 'react-icons/fa';
 
-function ShareButton() {
+function ShareButton({url}) {
   const handleShare = async () => {
     try {
       await navigator.share({
         title: 'Share GIF',
-        url: 'https://example.com/my-gif.gif',
+        url: url,
       });
       console.log('Shared successfully');
     } catch (error) {
