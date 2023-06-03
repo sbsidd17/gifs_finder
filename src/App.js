@@ -44,7 +44,7 @@ function App() {
           onChange={changeHandler}
           placeholder="Search Gifs"
         />
-        <div className="flex flex-wrap w-full h-[300px] justify-center gap-2 border border-white overflow-y-auto">
+        <div className="flex flex-wrap w-full md:h-[300px] h-[600px] justify-center gap-2 border border-white overflow-y-auto">
           {gifUrl.map((item, index) => {
             return loading === true ? (
               <Loading key={index} />
