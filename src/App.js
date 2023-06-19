@@ -38,7 +38,7 @@ function App() {
         onSubmit={submitHandler}
         className="flex flex-col gap-5 md:w-[60%]  mx-auto"
       >
-        <h1 className="text-center text-white text-xl mt-4">Gifs Finder</h1>
+        <h1 className="text-center text-white text-xl mt-4">Gif Ninja</h1>
         <input
           className="rounded-lg p-3"
           onChange={changeHandler}
